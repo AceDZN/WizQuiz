@@ -59,11 +59,13 @@ class App extends Component{
     this.setState({score});
   }
   render(){
+    var results, scorebox;
     if(this.state.current > this.state.questions.length){
-      var scorebox = '';
-      var results = <Results {...this.state} />;
+      scorebox = '';
+      results = <Results {...this.state} />;
     } else {
-      var scorebox = <ScoreBox {...this.state} />;
+      scorebox = <ScoreBox {...this.state} />;
+      results = '';
     }
     return (<div>
       {scorebox}
