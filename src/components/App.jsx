@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ScoreBox from './quiz/ScoreBox.jsx';
 import Results from './quiz/Results.jsx';
 import QuestionList from './quiz/QuestionList.jsx';
+import AceLogo from './AceLogo.jsx';
 class App extends Component{
   constructor(props){
     super(props);
@@ -71,6 +72,7 @@ class App extends Component{
       {scorebox}
       {results}
       <QuestionList {...this.state} setCurrent={this.setCurrent.bind(this)} setScore={this.setScore.bind(this)} />
+      <AceLogo />
     </div>);
   }
 }

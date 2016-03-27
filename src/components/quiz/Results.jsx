@@ -18,7 +18,7 @@ class Results extends Component{
           {percent}% - {message}
         </h1>
         <hr />
-        <a href="/app">Take the quiz again</a>
+        <a href="./">Take the quiz again</a>
       </div>
     )
   }
